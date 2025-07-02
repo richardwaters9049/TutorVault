@@ -27,3 +27,4 @@ app.add_middleware(
 app.include_router(chat.router, prefix="/chat", tags=["Chat"])
 app.include_router(grade.router, prefix="/grade", tags=["Grading"])
 app.include_router(vault.router, prefix="/vault", tags=["KeyVault"])
+app.include_router(vault.router, prefix="/api")
